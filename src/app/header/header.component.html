@@ -1,0 +1,28 @@
+<header>
+    <!-- <app-logo></app-logo>
+    <app-nav></app-nav> -->
+
+    <a routerLink="/trabajos" routerLinkActive="active">nuestros trabajos</a>
+    <a routerLink="/servicios" routerLinkActive="active">servicios</a>
+    <a routerLink="/" class="logo"><img src="marketing network.png" alt="logo"></a>
+    <a routerLink="/contacto" routerLinkActive="active">contacto</a>
+    <a routerLink="/nosotros" routerLinkActive="active">sobre nosotros</a>
+
+    <div class="below-logo-nav">
+        <a routerLink="/trabajos">nuestros trabajos</a>
+        <a routerLink="/">servicios</a>
+        <a routerLink="/">contacto</a>
+        <a routerLink="/">sobre nosotros</a>
+    </div>
+
+    <div class="hamburger-button" (click)="openNav()" ><i class="fa-solid fa-bars"></i></div>
+    <div class="nav-background" [class.closed]="!navIsOpen" (click)="openNav()"></div>
+    <div class="expanding-nav" [class.closed]="!navIsOpen">
+        <div class="close-nav-button"><i class="fa-solid fa-xmark" style="color: #808080;" (click)="openNav()"></i></div>
+        <a routerLink="/" (click)="openNav()">inicio</a>
+        <a routerLink="/trabajos" (click)="openNav()">nuestros trabajos</a>
+        <a routerLink="/" (click)="openNav()">servicios</a>
+        <a routerLink="/" (click)="openNav()">contacto</a>
+        <a routerLink="/" (click)="openNav()">sobre nosotros</a>
+    </div>
+</header>

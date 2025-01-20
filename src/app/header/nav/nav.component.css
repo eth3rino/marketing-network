@@ -1,0 +1,14 @@
+nav
+{
+    display: flex;
+    gap: 30px;
+    margin-right: 65px;
+}
+nav a
+{
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}

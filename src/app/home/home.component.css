@@ -1,0 +1,103 @@
+main
+{
+    width: 100%;
+    position: relative;
+    padding: 1px;
+    /* margin: 1px; */
+}
+
+
+main img
+{
+    position: absolute;
+    width: 50%;
+    opacity: .2;
+    filter: blur(10px);
+    right: 100px;
+    top: 85px;
+}
+
+.text-block
+{
+    width: 45%;
+    margin: 10% 0px 10% 5%;
+}
+.text:first-of-type
+{
+    color: whitesmoke;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    /* letter-spacing: ; */
+}
+.text:first-of-type::after
+{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 87%;
+    background-color: white;
+    left: 0;
+    bottom: 5%;
+}
+.text
+{
+    position: relative;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 2rem;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+
+/* main .text-block
+{
+    margin: 200px 0px 0px 100px;
+    position: relative;
+}
+
+.text-block > *
+{
+    color: #fff;
+    font-family: 'Poppins';
+    font-weight: 900;
+
+}
+.text-block .title
+{
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+.text-block .sub-title
+{
+    margin: 30px 0px 0px;
+    font-size: 1.5em;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+} */
+
+
+@media only screen and (max-width: 1400px) {
+    .text-block {margin-top: 5%;}
+}
+@media only screen and (max-width: 1100px) {
+    .text-block { width: 80%; margin-top: 12%; margin-bottom: 7%;}
+}
+@media only screen and (max-width: 900px) {
+    .text-block { width: 100%;}
+    main {margin: 150px 0px 300px}
+    main img {width: 80%; right: 50px; top: 0px}
+}
+@media only screen and (max-width: 500px) {
+    main {margin-top: 50px;}
+    .text-block .text:nth-child(2) {width: 90%; font-size: 1.8em;}
+    .text-block .text:first-child {font-size: 2.3rem; width: 95%;}
+    main img {opacity: 0.3; width: 150%; right: -75%;}
+}
+@media only screen and (max-height: 850px) {
+    .text-block {margin-top: 0;}
+    main {margin-top: 10px;}
+}

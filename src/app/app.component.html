@@ -1,0 +1,5 @@
+<app-header></app-header>
+
+<div [@routeAnimations]="prepareRouteTransition(outlet)" class="router-wrapper">
+    <router-outlet #outlet="outlet"></router-outlet>
+</div>

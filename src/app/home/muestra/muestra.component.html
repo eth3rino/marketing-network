@@ -1,0 +1,16 @@
+<div class="wrapper">
+    <h2>nuestros trabajos</h2>
+    <div class="imagen transition-1s" id="img-muestra-1" appIsVisible [threshold]="0.3">
+        <img src="gnc.jpeg" alt="">
+    </div>
+    <div class="imagen transition-1s" id="img-muestra-2" appIsVisible [threshold]="0.25">
+        <img src="iglesia.jpeg" alt="">
+    </div>
+    <div class="imagen transition-1s" id="img-muestra-3" appIsVisible [threshold]="0.3">
+        <img src="ipixcell.jpeg" alt="">
+    </div>
+    <div class="imagen transition-1s" style="transition: .5s .2s;" id="img-muestra-4" appIsVisible [threshold]="0.3">
+        <img src="rodolfo.jpeg" alt="">
+    </div>
+    <a routerLink="/trabajos" (click)="scrollToTop()">ver todo <i class="fa-solid fa-caret-up fa-rotate-90"></i></a>
+</div>

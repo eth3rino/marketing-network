@@ -1,0 +1,82 @@
+.wrapper
+{
+    display: grid;
+    grid-template-areas: 
+        "uno uno dos dos"
+        "tres cuatro dos dos"
+    ;
+    /* gap: 50px; */
+    margin-top: 200px;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+#img-muestra-1
+{
+    grid-area: uno;
+    width: 75%;
+    place-self: center;
+}
+#img-muestra-2
+{
+    grid-area: dos;
+    width: 90%;
+    place-self: center;
+}
+#img-muestra-3
+{
+    grid-area: tres;
+    margin: 40px;
+}
+#img-muestra-4
+{
+    grid-area: cuatro;
+    align-self: center;
+}
+
+.wrapper .imagen img
+{
+    width: 100%;
+    box-shadow: 15px 15px 10px #1b1b1b;
+}
+
+.imagen
+{
+    opacity: 0;
+    user-select: none;
+}
+
+.visible 
+{
+    opacity: 1;
+}
+h2
+{
+    position: absolute;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    color: white;
+    font-size: 3rem;
+    left: 50%;
+    translate: -50%;
+    top: -100px;
+    font-weight: 600;
+    /* text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px; */
+}
+
+a
+{
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    translate: -50%;
+    text-decoration: none;
+}
