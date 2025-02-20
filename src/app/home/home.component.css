@@ -93,8 +93,9 @@ main img
 }
 @media only screen and (max-width: 500px) {
     main {margin-top: 50px;}
-    .text-block .text:nth-child(2) {width: 90%; font-size: 1.8em;}
-    .text-block .text:first-child {font-size: 2.3rem; width: 95%;}
+    .text-block .text:nth-child(2) {width: 90%; font-size: 1.8em; display: none;}
+    .text-block .text:first-child {margin-top: 40px; width: 95%;}
+    .text-block .text:first-child::after {display: none;}
     main img {opacity: 0.3; width: 150%; right: -75%;}
 }
 @media only screen and (max-height: 850px) {
