@@ -37,3 +37,4 @@ export class IsVisibleDirective implements OnInit {
     observer.observe(this.element.nativeElement)
   }
 }
+

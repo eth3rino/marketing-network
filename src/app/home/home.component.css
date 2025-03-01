@@ -82,6 +82,7 @@ main img
 
 @media only screen and (max-width: 1400px) {
     .text-block {margin-top: 5%;}
+    main .text-block .text:nth-child(2) {margin-right: 50px;}
 }
 @media only screen and (max-width: 1100px) {
     .text-block { width: 80%; margin-top: 12%; margin-bottom: 7%;}
